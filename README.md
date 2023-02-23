@@ -1,1 +1,30 @@
 # lego_sawmills
+
+
+Run by 
+
+```
+go run main/main.go
+```
+and enter the input as specified in the Task:
+
+1. The first line of input for each test case contains a single integer Z, the number of sawmills (each is
+connected to its own river) in the test case.
+2. This is followed by Z lines, each describing the tree trunks.
+3. The first number in each line is the number E of tree trunks that are cut.
+4. Following it are E strict positive integers, indicating the length (in blocks) of the tree trunks.
+5. The input is terminated by a description starting with Z = 0.
+
+
+### Assumptions:
+
+I think the task description is not entirely clear about how the sawmills work. 
+I assume that if the first tree trunk is only size 2, then we will have to sell it as a 2-sized wood.
+For example if we have:
+1 2 1 then it will be -1 + 3 + -1 = 1
+
+And that we can sell more than once per tree trunk. 
+For example:
+Or if we have 5 4 3 then it will be 1 + (-1 + 1) + 1 = 2
+
+
