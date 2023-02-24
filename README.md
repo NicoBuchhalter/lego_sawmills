@@ -19,9 +19,9 @@ connected to its own river) in the test case.
 ### Assumptions:
 
 I think the task description is not entirely clear about how the sawmills work. 
-I assume that if the first tree trunk is only size 2, then we will have to sell it as a 2-sized wood.
+I assume that it will only sell whenever the sawnmill makes a cut.
 For example if we have:
-1 2 1 then it will be -1 + 3 + -1 = 1
+1 2 1 then it will be 3 (first is remainder and then it makes the only cut at 2) 
 
 And that we can sell more than once per tree trunk. 
 For example:

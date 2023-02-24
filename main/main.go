@@ -157,8 +157,6 @@ func calculateIncome(treeTrunks []int) int {
 			firstCut := 3 - currentRemainder
 			income += incomeFor(firstCut)
 			income += ((trunk - firstCut) / 3) * incomeFor(3)
-		} else {
-			income += incomeFor(trunk)
 		}
 		currentRemainder = (trunk + currentRemainder) % 3
 	}

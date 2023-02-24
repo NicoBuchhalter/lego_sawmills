@@ -11,7 +11,7 @@ func TestMain_calculateIncome(t *testing.T) {
 		{
 			name:     "Just a few small trunks",
 			trunks:   []int{1, 2, 1},
-			expected: 1,
+			expected: 3,
 		},
 		{
 			name:     "Some big ones",
@@ -21,7 +21,7 @@ func TestMain_calculateIncome(t *testing.T) {
 		{
 			name:     "A lot of trunks",
 			trunks:   []int{3, 35, 20, 4, 8, 6, 7, 3, 35, 20, 4, 40, 6, 7, 3, 2, 9, 12},
-			expected: 71,
+			expected: 68,
 		},
 	}
 	for _, tt := range tests {
@@ -44,8 +44,8 @@ func TestMain_calculateBestOrders(t *testing.T) {
 		{
 			name:                  "Just a few small trunks",
 			test:                  SawMillTest{TreeTrunks: []int{1, 2, 1}},
-			expectedIncome:        1,
-			expectedOrderedTrunks: [][]int{{1, 2, 1}, {2, 1, 1}},
+			expectedIncome:        3,
+			expectedOrderedTrunks: [][]int{{1, 2, 1}},
 		},
 		{
 			name:                  "Some big ones",
